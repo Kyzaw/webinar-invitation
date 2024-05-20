@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+body {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  background-color: rgb(59, 89, 152);
+  background-image: linear-gradient(
+      rgba(59, 89, 152, 0.8),
+      rgba(59, 89, 152, 0.8)
+    ),
+    url("assets/main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.header {
+  color: #ffdb4f;
+  font-size: 40px;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 2px;
+}
+
+.header-second {
+  font-size: 30px;
+  font-family: "League Spartan", sans-serif;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.paragraf {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.logo {
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+
+.prodi {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #17603e;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "League Spartan", sans-serif;
+  font-size: 18px;
+  margin-top: 1px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #36b379;
+}
+
+.button i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.button .fa-solid.fa-book-open {
+  margin-right: 10px;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: normal;
+}
+
+.footer {
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffdb4f;
+  font-size: 25px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.footer-second {
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffdb4f;
+  margin: auto;
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+/* Responsive FOR Mobile */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 30px;
+  }
+
+  .header-second {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+
+  .paragraf {
+    font-size: 20px;
+  }
+
+  .footer,
+  .footer-second {
+    font-size: 20px;
+  }
+
+  .logo {
+    max-width: 179px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .prodi {
+    width: 110px;
+  }
+
+  .button {
+    font-size: 15px;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+  }
+
+  body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  iframe {
+    width: 90%;
+    height: 450px;
+  }
+
+  .simply-countdown {
+    font-size: 15px;
+  }
+}
+
+/* Desktop Mode */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .container {
+    padding: 120px;
+  }
+
+  .header {
+    font-size: 40px;
+  }
+
+  .header-second {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+
+  .paragraf {
+    font-size: 28px;
+  }
+
+  .footer,
+  .footer-second {
+    font-size: 28px;
+  }
+
+  .logo {
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .prodi {
+    width: 130px;
+  }
+
+  .button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Responsive FOR Tablets */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    padding: 100px;
+  }
+
+  .header {
+    font-size: 35px;
+  }
+
+  .header-second {
+    font-size: 28px;
+    margin-top: 18px;
+  }
+
+  .paragraf {
+    font-size: 30px;
+  }
+
+  .footer,
+  .footer-second {
+    font-size: 30px;
+  }
+
+  .logo {
+    max-width: 280px;
+    margin-bottom: 18px;
+  }
+
+  .prodi {
+    width: 150px;
+  }
+
+  .button {
+    font-size: 25px;
+    padding: 9px 18px;
+    margin-bottom: 15px;
+  }
+
+  body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .simply-countdown {
+    font-size: 20px;
+  }
+
+  iframe {
+    width: 500px;
+    height: 710px;
+  }
+}
+
+

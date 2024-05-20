@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/simplyCountdown.theme.default.css" />
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <link rel="icon" href="assets/uikabogor.png" />
+    <title>Webinar Nasional</title>
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <div class="container">
+      <img src="assets/prodi-fts.png" alt="logo-fts" class="prodi" />
+      <img
+        class="logo"
+        src="assets/logo-uika.png"
+        alt="Universitas Ibn Khaldun"
+      />
+      <h1 class="header">WEBINAR NASIONAL</h1>
+      <p class="paragraf">Akan dilangsungkan Pada:</p>
+      <div class="simply-countdown"></div>
+      <h2 class="header-second">Universitas Ibn Khaldun</h2>
+      <br /><br />
+      <a class="button" href="#" onclick="toggleInvitation()">
+        <i class="fas fa-book-open"></i>
+        Buka Undangan
+      </a>
+      <a
+        class="button"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeF717WjiPwsDTBSDAsk0kZ9vGARrhh2bBgkkoPrrktJO-_3g/viewform"
+      >
+        <i class="fa-solid fa-user"></i>
+        Daftar Webinar
+      </a>
+      <a class="button" href="assets/webinar-virtual-background.png" download><i class="fa-solid fa-download"></i> Download Virtual Background</a>
+    </div>
+    <div
+      class="embed-responsive embed-responsive-16by9"
+      id="camera_view_div"
+      style="display: none"
+    >
+      <iframe
+        src="poster.html"
+        width="800px"
+        height="850px"
+        class="embed-responsive-item container"
+      ></iframe>
+    </div>
+    <script src="dist/simplyCountdown.min.js"></script>
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 5, // required
+        day: 25, // required
+        hours: 0, // Default is 0 [0-23] integer
+        minutes: 0, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+        plural: true, //use plurals
+      });
+
+      function toggleInvitation() {
+        var iframeDiv = document.getElementById("camera_view_div");
+        iframeDiv.style.display =
+          iframeDiv.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>
