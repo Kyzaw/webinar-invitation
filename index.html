@@ -27,18 +27,17 @@
       <div class="simply-countdown"></div>
       <h2 class="header-second">Universitas Ibn Khaldun</h2>
       <br /><br />
-      <a class="button" href="#" onclick="toggleInvitation()">
-        <i class="fas fa-book-open"></i>
-        Buka Undangan
+  
+      <a class="button" href="assets/Materi 1 -  Data Analytics for Better Business Insights.pdf" download><i class="fa-solid fa-download"></i> Download Materi 1</a>
+
+      <a class="button" href="assets/Materi 2 - Webminar Business Intelligence.pdf" download><i class="fa-solid fa-download"></i> Download Materi 2</a>
+
+      <a class="button" href="https://drive.google.com/drive/folders/1ePcorWrDW6CjZiw1TcFI-8PSuFzrV34j" ><i class="fa-solid fa-certificate"></i> E-Certificate </a>
+
+      <a class="button" href="#" onclick="showVideo()">
+          <i class="fa-solid fa-video"></i>
+          Tampilkan Video
       </a>
-      <a
-        class="button"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeF717WjiPwsDTBSDAsk0kZ9vGARrhh2bBgkkoPrrktJO-_3g/viewform"
-      >
-        <i class="fa-solid fa-user"></i>
-        Daftar Webinar
-      </a>
-      <a class="button" href="assets/webinar-virtual-background.png" download><i class="fa-solid fa-download"></i> Download Virtual Background</a>
     </div>
     <div
       class="embed-responsive embed-responsive-16by9"
@@ -46,11 +45,13 @@
       style="display: none"
     >
       <iframe
-        src="poster.html"
+        src=""
         width="800px"
-        height="850px"
+        height="450px"
         class="embed-responsive-item container"
+        allow="autoplay; fullscreen"
       ></iframe>
+    </div>
     </div>
     <script src="dist/simplyCountdown.min.js"></script>
     <script src="countdown/simplyCountdown.min.js"></script>
@@ -73,14 +74,22 @@
       });
 
       function toggleInvitation() {
-    var iframeDiv = document.getElementById("camera_view_div");
-    iframeDiv.style.display = iframeDiv.style.display === "none" ? "block" : "none";
+      var iframeDiv = document.getElementById("camera_view_div");
+      iframeDiv.style.display = iframeDiv.style.display === "none" ? "block" : "none";
     
     // Scroll ke elemen iframeDiv setelah ditampilkan
     if (iframeDiv.style.display === "block") {
       iframeDiv.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+    function showVideo() {
+      var iframeDiv = document.getElementById("camera_view_div");
+      var iframe = iframeDiv.querySelector("iframe");
+      iframe.src = "https://drive.google.com/file/d/14ztaspB7OCw2r_slmtBd2apiyr8d15vy/preview"; // Menggunakan link preview
+      iframeDiv.style.display = "block";
+      iframeDiv.scrollIntoView({ behavior: 'smooth' });
+}
     </script>
   </body>
 </html>
