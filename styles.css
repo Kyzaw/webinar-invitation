@@ -127,7 +127,7 @@ h2 {
   }
 
   .header {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .header-second {
@@ -176,7 +176,10 @@ h2 {
   .simply-countdown {
     font-size: 15px;
   }
+
+  
 }
+
 
 /* Desktop Mode */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
@@ -272,6 +275,9 @@ h2 {
     width: 500px;
     height: 710px;
   }
+
+  
 }
+
 
 
